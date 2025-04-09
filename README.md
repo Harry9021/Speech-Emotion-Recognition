@@ -13,7 +13,7 @@ A state‑of‑the‑art **speech emotion recognition** system that converts aud
 - **scikit‑learn**, **tqdm**, **wget** for data prep & utilities  
 
 ### Frontend  
-- **React** (Create React App) citeturn5view0  
+- **React** (Create React App)  
 - **Axios** for HTTP requests  
 - **React Router**, **Bootstrap 4**, **AOS** for scroll animations  
 - **react‑toastify** for notifications  
