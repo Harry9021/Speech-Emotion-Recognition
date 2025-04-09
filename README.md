@@ -7,8 +7,8 @@ A state‑of‑the‑art **speech emotion recognition** system that converts aud
 ## 🛠 Tech Stack
 
 ### Backend  
-- **Flask** for REST API endpoints citeturn3view0  
-- **PyTorch** for model definition & inference citeturn3view0  
+- **Flask** for REST API endpoints
+- **PyTorch** for model definition & inference 
 - **Librosa** for audio loading & mel‑spectrogram extraction
 - **scikit‑learn**, **tqdm**, **wget** for data prep & utilities  
 
@@ -22,7 +22,7 @@ A state‑of‑the‑art **speech emotion recognition** system that converts aud
 
 ## 📚 Dataset
 
-We leverage the **RAVDESS** (Ryerson Audio‑Visual Database of Emotional Speech and Song) dataset—24 actors, 8 emotions. The backend auto‑downloads & organizes it from Zenodo before training or inference. citeturn4view0
+We leverage the **RAVDESS** (Ryerson Audio‑Visual Database of Emotional Speech and Song) dataset—24 actors, 8 emotions. The backend auto‑downloads & organizes it from Zenodo before training or inference. 
 
 ---
 
@@ -41,7 +41,7 @@ We leverage the **RAVDESS** (Ryerson Audio‑Visual Database of Emotional Speech
    - Epochs: 50  
 5. **Inference**  
    - `/upload` endpoint returns one of seven emotions:  
-     `angry`, `happy`, `sad`, `neutral`, `fearful`, `disgust`, `surprised`. citeturn4view0turn3view0
+     `angry`, `happy`, `sad`, `neutral`, `fearful`, `disgust`, `surprised`.
 
 ---
 
@@ -110,12 +110,6 @@ Upload an audio clip in the UI and watch the emotion appear! 🎉
 2. Create a branch (`git checkout -b feature-name`)  
 3. Commit your changes (`git commit -m "feat: add new feature"`)  
 4. Push & open a PR 🚀  
-
----
-
-## 📄 License
-
-This project is MIT‑licensed. See [LICENSE](LICENSE) for details.
 
 ---
 
