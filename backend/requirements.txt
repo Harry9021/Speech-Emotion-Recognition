@@ -1,0 +1,10 @@
+flask
+flask-cors
+python-dotenv
+torch
+torchvision
+librosa
+numpy
+scikit-learn
+wget
+tqdm

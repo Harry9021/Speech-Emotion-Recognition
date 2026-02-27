@@ -1,0 +1,19 @@
+# Virtual environments
+venv/
+myenv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Runtime data
+tmp/
+data/
+weights/
+
+# IDE
+.vscode/
+.idea/
