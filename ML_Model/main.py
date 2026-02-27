@@ -37,18 +37,18 @@ except FileNotFoundError:
     model = None
     logger.error("Training finished but model file not found. Check training output.")
 
-server = Flask(__name__)
+app = Flask(__name__)
 
-cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:3000")
-CORS(server, origins=[o.strip() for o in cors_origins.split(",")])
+cors_origins = os.getenv("CORS_ORIGINS", "*")
+CORS(app, origins=[o.strip() for o in cors_origins.split(",")])
 
 
-@server.route("/health", methods=["GET"])
+@app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok", "model_loaded": model is not None})
 
 
-@server.route("/upload", methods=["POST"])
+@app.route("/upload", methods=["POST"])
 def upload():
     if model is None:
         return jsonify({"error": "Model not loaded. Train first: python train.py"}), 503
@@ -82,4 +82,4 @@ def upload():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
     debug = os.getenv("FLASK_DEBUG", "true").lower() == "true"
-    server.run(host="0.0.0.0", port=port, debug=debug)
+    app.run(host="0.0.0.0", port=port, debug=debug)
